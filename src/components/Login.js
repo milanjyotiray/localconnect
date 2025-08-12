@@ -59,7 +59,7 @@ function Login({ onLogin }) {
               type="text"
               id="neighborhood"
               className="form-control"
-              placeholder="e.g., Downtown, Oak Valley, etc."
+              placeholder="e.g., Mission District, Castro, Richmond, etc."
               value={neighborhood}
               onChange={(e) => setNeighborhood(e.target.value)}
               required

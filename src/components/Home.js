@@ -43,7 +43,7 @@ function Home({ posts, user, userLocation }) {
       <header className="header">
         <h1>🏡 LocalConnect</h1>
         <div className="location">
-          📍 {user?.neighborhood || 'Your Neighborhood'}
+          📍 {user?.neighborhood || 'Mission District, SF'}
         </div>
       </header>
 
