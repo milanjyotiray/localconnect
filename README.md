@@ -1,4 +1,4 @@
-<div align="center">
+<div>
 
 # 🏡 LocalConnect
 ### *The Modern Community Platform*
@@ -210,7 +210,7 @@ MIT License - feel free to use this project for your hackathon, portfolio, or co
 - 🐦 **Twitter**: @MilanjyotiRay
 ---
 
-<div align="center">
+<div>
 
 **Built with ❤️ for stronger communities**
 
