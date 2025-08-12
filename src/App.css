@@ -475,6 +475,241 @@ select.form-control {
   color: #2c3e50;
 }
 
+/* Image upload styles */
+.image-upload-container {
+  margin-top: 0.5rem;
+}
+
+.image-upload-area {
+  border: 2px dashed #4285f4;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #f8f9ff 0%, #fff 100%);
+}
+
+.image-upload-area:hover {
+  border-color: #1565c0;
+  background: linear-gradient(135deg, #f0f4ff 0%, #fff 100%);
+  transform: translateY(-2px);
+}
+
+.upload-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.7;
+}
+
+.image-upload-area div:nth-child(2) {
+  font-weight: 500;
+  color: #4285f4;
+  margin-bottom: 0.25rem;
+}
+
+.image-upload-area small {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.image-preview {
+  position: relative;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.preview-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.remove-image-btn {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.4);
+  transition: all 0.2s ease;
+}
+
+.remove-image-btn:hover {
+  background: #c0392b;
+  transform: scale(1.1);
+}
+
+/* Post image display */
+.post-image-container {
+  margin: 0.75rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.post-image:hover {
+  transform: scale(1.02);
+}
+
+/* Modern card shadows and animations */
+.post {
+  transition: all 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Enhanced floating action button */
+.fab {
+  background: linear-gradient(135deg, #4285f4 0%, #1565c0 100%);
+  box-shadow: 0 4px 20px rgba(66, 133, 244, 0.4);
+}
+
+.fab:hover {
+  box-shadow: 0 6px 30px rgba(66, 133, 244, 0.6);
+}
+
+/* Glassmorphism effect for navigation */
+.navigation {
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Enhanced header with glassmorphism */
+.header {
+  background: linear-gradient(135deg, rgba(66, 133, 244, 0.95) 0%, rgba(21, 101, 192, 0.95) 100%);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+/* Modern gradient backgrounds */
+.login-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #4285f4 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Enhanced post types with modern styling */
+.post-type {
+  background: linear-gradient(135deg, #4285f4 0%, #1565c0 100%);
+  box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+}
+
+.post-type.lost-pet {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
+}
+
+.post-type.event {
+  background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+  box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
+}
+
+.post-type.help-request {
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  box-shadow: 0 2px 8px rgba(243, 156, 18, 0.3);
+}
+
+.post-type.announcement {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+/* Enhanced buttons */
+.btn {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4285f4 0%, #1565c0 100%);
+}
+
+/* Enhanced form controls */
+.form-control:focus {
+  box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Modern filter buttons */
+.filter-btn {
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(66, 133, 244, 0.2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #4285f4 0%, #1565c0 100%);
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+}
+
+/* Parallax-like effect for posts */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post {
+  animation: slideInUp 0.5s ease-out;
+}
+
+/* Enhanced urgent badge with modern styling */
+.urgent-badge {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  box-shadow: 0 2px 12px rgba(231, 76, 60, 0.4);
+}
+
+/* Modern empty state */
+.empty-state {
+  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(248,249,255,0.9) 100%);
+  border-radius: 16px;
+  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
 /* Responsive design */
 @media (min-width: 480px) {
   .main-content {

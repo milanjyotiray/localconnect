@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -10,8 +10,12 @@ function NewPost({ user, onAddPost }) {
     content: '',
     location: user?.neighborhood || '',
     urgent: false,
-    contact: user?.email || ''
+    contact: user?.email || '',
+    image: null,
+    imagePreview: null
   });
+  
+  const fileInputRef = useRef(null);
 
   const postTypes = [
     { value: 'lost-pet', label: '🐾 Lost Pet', description: 'Report a missing pet' },
@@ -47,6 +51,44 @@ function NewPost({ user, onAddPost }) {
       ...prev,
       [field]: value
     }));
+  };
+  
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      // Check file size (max 5MB)
+      if (file.size > 5 * 1024 * 1024) {
+        alert('Image size must be less than 5MB');
+        return;
+      }
+      
+      // Check file type
+      if (!file.type.startsWith('image/')) {
+        alert('Please select an image file');
+        return;
+      }
+      
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        setFormData(prev => ({
+          ...prev,
+          image: file,
+          imagePreview: e.target.result
+        }));
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+  
+  const removeImage = () => {
+    setFormData(prev => ({
+      ...prev,
+      image: null,
+      imagePreview: null
+    }));
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
   };
 
   const getPlaceholderText = () => {
@@ -156,6 +198,37 @@ function NewPost({ user, onAddPost }) {
               value={formData.location}
               onChange={(e) => handleInputChange('location', e.target.value)}
             />
+          </div>
+
+          {/* Image Upload */}
+          <div className="form-group">
+            <label>Add Photo (Optional)</label>
+            <div className="image-upload-container">
+              {formData.imagePreview ? (
+                <div className="image-preview">
+                  <img src={formData.imagePreview} alt="Preview" className="preview-image" />
+                  <button type="button" className="remove-image-btn" onClick={removeImage}>
+                    ✕
+                  </button>
+                </div>
+              ) : (
+                <div 
+                  className="image-upload-area" 
+                  onClick={() => fileInputRef.current?.click()}
+                >
+                  <div className="upload-icon">📷</div>
+                  <div>Tap to add a photo</div>
+                  <small>JPG, PNG, GIF • Max 5MB</small>
+                </div>
+              )}
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept="image/*"
+                onChange={handleImageUpload}
+                style={{ display: 'none' }}
+              />
+            </div>
           </div>
 
           {/* Contact Information */}

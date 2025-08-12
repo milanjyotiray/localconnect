@@ -94,6 +94,12 @@ function Home({ posts, user, userLocation }) {
                 <h3 className="post-title">{post.title}</h3>
                 <p className="post-content">{post.content}</p>
                 
+                {post.imagePreview && (
+                  <div className="post-image-container">
+                    <img src={post.imagePreview} alt={post.title} className="post-image" />
+                  </div>
+                )}
+                
                 {post.contact && (
                   <div className="contact-info">
                     <strong>Contact:</strong> {post.contact}
