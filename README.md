@@ -10,7 +10,6 @@
 [![PWA](https://img.shields.io/badge/PWA-Ready-FF6B35?style=for-the-badge&logo=pwa&logoColor=white)](#)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-**[🚀 Live Demo](#) • [📱 Mobile Demo](#) • [📖 Documentation](#) • [🤝 Contribute](#contributing)**
 
 
 ## ✨ Why LocalConnect?
@@ -99,14 +98,6 @@ npm start
 
 ---
 
-## 🎪 Perfect for Hackathons
-
-### ✅ **Why Judges Will Love It**
-- **📱 Mobile Demo Ready** - Test on their phones instantly
-- **⚡ No Setup Required** - Works immediately with sample data
-- **🎯 Solves Real Problems** - Addresses actual community needs
-- **🎨 Professional Design** - Polished, production-ready UI
-- **🛡️ Thoughtful Safety** - Shows consideration for user welfare
 
 ### 🚀 **Demo Flow (5 minutes)**
 1. **⚡ Quick Setup** (30 seconds)
@@ -207,78 +198,20 @@ npm start
 
 ---
 
-## 🚀 Deployment Options
-
-### **Static Hosting (Recommended for Demos)**
-```bash
-npm run build
-# Deploy 'build' folder to:
-```
-- 🌐 **Netlify**: Drag & drop deployment
-- ⚡ **Vercel**: Git integration
-- 🔥 **Firebase Hosting**: Google infrastructure
-- 📦 **GitHub Pages**: Free hosting
-
-### **Cloud Platforms**
-- ☁️ **AWS S3 + CloudFront**
-- 🌊 **DigitalOcean App Platform**
-- 🚀 **Railway** or **Render**
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-### **🐛 Bug Reports**
-- Use GitHub Issues
-- Include steps to reproduce
-- Add screenshots if applicable
-
-### **✨ Feature Requests**
-- Describe the use case
-- Explain the expected behavior
-- Consider mobile-first design
-
-### **🔧 Code Contributions**
-1. Fork the repository
-2. Create a feature branch
-3. Follow existing code style
-4. Add tests if applicable
-5. Submit a pull request
-
----
-
 ## 📄 License
 
 MIT License - feel free to use this project for your hackathon, portfolio, or community!
-
----
-
-## 🙏 Acknowledgments
-
-- 🎨 **Design Inspiration**: Modern mobile-first principles
-- 🏘️ **Community Focus**: Real neighborhood problems and solutions
-- 📱 **Mobile Excellence**: iOS and Android design guidelines
-- ♿ **Accessibility**: WCAG 2.1 AA compliance
-
----
 
 ## 📞 Support
 
 **Questions? Issues? Ideas?**
 
-- 📧 **Email**: your.email@example.com
-- 🐦 **Twitter**: @yourusername
-- 💬 **GitHub Issues**: Best for bug reports
-- 🌟 **Star the repo** if you find it helpful!
-
+- 📧 **Email**: milanjyotiray84@gmail.com
+- 🐦 **Twitter**: @MilanjyotiRay
 ---
 
 <div align="center">
 
 **Built with ❤️ for stronger communities**
-
-[⭐ Star this repo](../../stargazers) • [🐛 Report bug](../../issues) • [💡 Request feature](../../issues)
 
 </div>
