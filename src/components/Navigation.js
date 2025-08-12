@@ -7,13 +7,13 @@ function Navigation() {
   const navItems = [
     {
       path: '/',
-      icon: '🏠',
+      icon: '🏡',
       label: 'Home'
     },
     {
       path: '/new-post',
-      icon: '✍️',
-      label: 'Post'
+      icon: '✨',
+      label: 'Create'
     },
     {
       path: '/profile',
@@ -30,8 +30,8 @@ function Navigation() {
           to={item.path}
           className={`nav-item ${location.pathname === item.path ? 'active' : ''}`}
         >
-          <div className="nav-icon">{item.icon}</div>
-          <div>{item.label}</div>
+          <span className="nav-icon">{item.icon}</span>
+          <span>{item.label}</span>
         </Link>
       ))}
     </nav>
