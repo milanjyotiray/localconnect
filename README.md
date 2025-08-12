@@ -12,16 +12,6 @@
 
 **[🚀 Live Demo](#) • [📱 Mobile Demo](#) • [📖 Documentation](#) • [🤝 Contribute](#contributing)**
 
----
-
-*LocalConnect transforms neighborhood communication with stunning design, powerful features, and mobile-first architecture. Built for the modern community.*
-
-</div>
-
-![LocalConnect Demo](https://img.shields.io/badge/Demo-Live-success?style=for-the-badge)
-![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react)
-![Mobile First](https://img.shields.io/badge/Mobile-First-4285F4?style=for-the-badge&logo=mobile)
-![PWA Ready](https://img.shields.io/badge/PWA-Ready-success?style=for-the-badge)
 
 ## ✨ Why LocalConnect?
 
